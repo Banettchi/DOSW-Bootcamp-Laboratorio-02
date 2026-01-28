@@ -80,5 +80,120 @@ mvn exec:java -Dexec.mainClass=edu.dosw.lab.Application
 
 ---
 
+## Parte 2: Hackathon Express
+
+### Reto 1: Tienda de Don Pepe (SOLID)
+**Estado**: ⏳ Pendiente  
+**Ubicación**: `src/main/java/edu/dosw/lab/solid/reto1/`
+
+**Principios SOLID aplicados**:
+- [ ] SRP - Responsabilidad Única
+- [ ] OCP - Abierto/Cerrado
+- [ ] LSP - Sustitución de Liskov
+- [ ] ISP - Segregación de Interfaces
+- [ ] DIP - Inversión de Dependencias
+
+**Evidencias**:
+- [ ] Código implementado
+- [ ] Captura de ejecución
+- [ ] Documentación de SOLID
+
+---
+
+### Reto 2: Chef de 5 Estrellas (Patrón Creacional)
+**Estado**: ⏳ Pendiente  
+**Ubicación**: `src/main/java/edu/dosw/lab/creacionales/reto2/`
+
+**Patrón**: Builder  
+**Categoría**: Creacional
+
+**Evidencias**:
+- [ ] Código implementado
+- [ ] Captura de ejecución
+- [ ] Documentación del patrón
+
+---
+
+### Reto 3: Reino de Vehículos (Patrón Creacional)
+**Estado**: ⏳ Pendiente  
+**Ubicación**: `src/main/java/edu/dosw/lab/creacionales/reto3/`
+
+**Patrón**: Abstract Factory  
+**Categoría**: Creacional
+
+**Evidencias**:
+- [ ] Código implementado
+- [ ] Captura de ejecución
+- [ ] Documentación del patrón
+
+---
+
+### Reto 4: Casa de Cambio (Patrón Estructural)
+**Estado**: ⏳ Pendiente  
+**Ubicación**: `src/main/java/edu/dosw/lab/estructurales/reto4/`
+
+**Patrón**: Strategy  
+**Categoría**: Comportamiento
+
+**Evidencias**:
+- [ ] Código implementado
+- [ ] Captura de ejecución
+- [ ] Documentación del patrón
+
+---
+
+### Reto 5: Café Personalizado (Patrón Estructural)
+**Estado**: ⏳ Pendiente  
+**Ubicación**: `src/main/java/edu/dosw/lab/estructurales/reto5/`
+
+**Patrón**: Decorator  
+**Categoría**: Estructural
+
+**Evidencias**:
+- [ ] Código implementado
+- [ ] Captura de ejecución
+- [ ] Documentación del patrón
+
+---
+
+### Reto 6: Soporte Técnico (Patrón Comportamiento)
+**Estado**: ⏳ Pendiente  
+**Ubicación**: `src/main/java/edu/dosw/lab/comportamiento/reto6/`
+
+**Patrón**: Chain of Responsibility  
+**Categoría**: Comportamiento
+
+**Evidencias**:
+- [ ] Código implementado
+- [ ] Captura de ejecución
+- [ ] Documentación del patrón
+
+---
+
+### Reto 7: Control Remoto Mágico (Patrón Comportamiento)
+**Estado**: ⏳ Pendiente  
+**Ubicación**: `src/main/java/edu/dosw/lab/comportamiento/reto7/`
+
+**Patrón**: Command  
+**Categoría**: Comportamiento
+
+**Evidencias**:
+- [ ] Código implementado
+- [ ] Captura de ejecución
+- [ ] Documentación del patrón
+
+---
+
+### Reto 8: Zoológico UML (Diseño)
+**Estado**: ⏳ Pendiente  
+**Ubicación**: `docs/reto8_zoologico.md`
+
+**Evidencias**:
+- [ ] Diagrama UML exportado (`docs/uml/zoologico.png`)
+- [ ] Documentación de SOLID en el diseño
+- [ ] Documentación de patrones utilizados
+
+---
+
 ## Retos - Implementacion
 
