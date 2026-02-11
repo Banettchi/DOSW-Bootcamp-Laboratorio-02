@@ -157,30 +157,47 @@ mvn exec:java -Dexec.mainClass=edu.dosw.lab.Application
 ---
 
 ### Reto 6: Soporte Técnico (Patrón Comportamiento)
-**Estado**: ⏳ Pendiente  
+**Estado**: ✅ Completado  
 **Ubicación**: `src/main/java/edu/dosw/lab/comportamiento/reto6/`
 
-**Patrón**: Chain of Responsibility  
-**Categoría**: Comportamiento
+**Categoría del patrón de diseño**: Comportamiento (Behavioral)  
+**Patrón Utilizado**: Chain of Responsibility  
+
+**Justificación**: El sistema de soporte técnico requiere procesar tickets que pasan por diferentes niveles de técnicos sin que el emisor del ticket conozca quién lo resolverá. Chain of Responsibility permite desacoplar el emisor del receptor, ya que cada técnico decide si puede manejar el ticket o lo pasa al siguiente en la cadena. Esto facilita agregar o quitar técnicos dinámicamente sin modificar la lógica de procesamiento.
+
+**¿Cómo lo aplicó?**:
+- `ManejadorSoporte` (Handler abstracto): define la interfaz de manejo con `manejar()`, verifica si el ticket coincide con la especialidad y prioridad máxima del técnico. Si no puede, lo pasa al siguiente.
+- `SoporteNivel1`, `SoporteNivel2`, `SoporteNivel3` (Concrete Handlers): técnicos Básico, Intermedio y Avanzado, cada uno con su nivel de especialidad y prioridad máxima.
+- `Ticket` (Request): contiene nivel (BASICO/INTERMEDIO/AVANZADO), prioridad (BAJA/MEDIA/ALTA) y descripción.
+- `Reto6` (Client): construye la cadena, recibe tickets por Scanner y usa Streams para estadísticas (conteo por nivel, pendientes, promedio de prioridad).
 
 **Evidencias**:
-- [ ] Código implementado
+- [x] Código implementado
 - [ ] Captura de ejecución
-- [ ] Documentación del patrón
+- [x] Documentación del patrón
 
 ---
 
 ### Reto 7: Control Remoto Mágico (Patrón Comportamiento)
-**Estado**: ⏳ Pendiente  
+**Estado**: ✅ Completado  
 **Ubicación**: `src/main/java/edu/dosw/lab/comportamiento/reto7/`
 
-**Patrón**: Command  
-**Categoría**: Comportamiento
+**Categoría del patrón de diseño**: Comportamiento (Behavioral)  
+**Patrón Utilizado**: Command  
+
+**Justificación**: El control remoto mágico necesita ejecutar acciones sobre varios dispositivos (luces, puertas, música, persianas), registrar quién ejecutó cada acción, y permitir deshacer cualquier acción individual. El patrón Command encapsula cada acción como un objeto, desacoplando al invocador (control remoto) de los receptores (dispositivos). Esto permite implementar undo fácilmente, mantener un historial completo y agregar nuevos dispositivos/acciones sin modificar el código existente.
+
+**¿Cómo lo aplicó?**:
+- `Comando` (Command interface): define `ejecutar()`, `deshacer()`, `getUsuario()`, `getDescripcion()` e `isDeshecho()`.
+- `ComandoEncenderLuz`, `ComandoAbrirPuerta`, `ComandoReproducirMusica`, `ComandoAjustarVolumen` (Concrete Commands): encapsulan acciones sobre cada dispositivo con tracking del usuario que las ejecutó.
+- `Luz`, `Puerta`, `Musica`, `Persiana` (Receivers): dispositivos del hogar que ejecutan las acciones reales.
+- `ControlRemoto` (Invoker): ejecuta comandos, almacena historial y permite deshacer acciones individuales por índice.
+- `Reto7` (Client): entrada interactiva con Scanner, muestra resultados, historial completo y usa Streams para investigar quién desconfiguró los electrodomésticos.
 
 **Evidencias**:
-- [ ] Código implementado
+- [x] Código implementado
 - [ ] Captura de ejecución
-- [ ] Documentación del patrón
+- [x] Documentación del patrón
 
 ---
 
