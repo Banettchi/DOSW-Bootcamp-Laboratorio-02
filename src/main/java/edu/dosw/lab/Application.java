@@ -3,6 +3,7 @@ package edu.dosw.lab;
 import edu.dosw.lab.creacionales.reto1.Reto1Main;
 import edu.dosw.lab.creacionales.reto2.Reto2Main;
 import edu.dosw.lab.creacionales.reto3.Reto3Main;
+import edu.dosw.lab.estructurales.reto4.Reto4Main;
 
 public class Application {
 
@@ -17,5 +18,8 @@ public class Application {
 
 		// Ejecutar Reto 3
 		Reto3Main.ejecutar();
+
+		// Ejecutar Reto 4
+		Reto4Main.ejecutar();
 	}
 }
