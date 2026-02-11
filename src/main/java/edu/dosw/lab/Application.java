@@ -22,5 +22,8 @@ public class Application {
 
 		// Ejecutar Reto 4
 		Reto4Main.ejecutar();
+
+		// Ejecutar Reto 5
+		Reto5Main.ejecutar();
 	}
 }
