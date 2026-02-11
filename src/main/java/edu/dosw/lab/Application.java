@@ -4,6 +4,7 @@ import edu.dosw.lab.creacionales.reto1.Reto1Main;
 import edu.dosw.lab.creacionales.reto2.Reto2Main;
 import edu.dosw.lab.creacionales.reto3.Reto3Main;
 import edu.dosw.lab.estructurales.reto4.Reto4Main;
+import edu.dosw.lab.estructurales.reto5.Reto5Main;
 
 public class Application {
 
